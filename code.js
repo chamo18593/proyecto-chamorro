@@ -64,6 +64,9 @@ console.log(listaDeComidaDulce);
 const listaDeComidaSalada = ["pan","pizza","chipa","sanguchitos"];
 console.log(listaDeComidaSalada);
 
+const compras= listaDeComidaDulce.concat(listaDeComidaSalada);
+console.log(compras);
+
 
 
 
