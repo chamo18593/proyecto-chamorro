@@ -8,13 +8,13 @@ saludar();
 CatalogoDeComida();
 function CatalogoDeComida()
 {
-    let ropaDeEstacion = prompt("Comida dulce o salada?");
+    let CatalogoDeComida = prompt("Comida dulce o salada?");
 
-    if(ropaDeEstacion == "dulce")
+    if(CatalogoDeComida == "dulce")
     {
         mostrarComidaDulce();
     }
-    else if(ropaDeEstacion == "salada")
+    else if(CatalogoDeComida == "salada")
     {
         mostrarComidaSalada();
     }
@@ -58,21 +58,11 @@ let saludo = () => {
 let nomCompleto=saludo();
 alert(nomCompleto);
 
+const listaDeComidaDulce = ["waffles","brownie","cookies","budin"];
+console.log(listaDeComidaDulce);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const listaDeComidaSalada = ["pan","pizza","chipa","sanguchitos"];
+console.log(listaDeComidaSalada);
 
 
 
