@@ -121,6 +121,25 @@ let saludo = () => {
 let nomCompleto=saludo();
 alert(nomCompleto);
 
+//Ejemplo del pedido 
+
+const preciosComida=[200,400,150];
+
+let total=0;
+function sumarTotal(precio){
+    total+=precio;
+}
+
+function realizar(operacion,lista){
+    for(const elemento of lista){
+        operacion(elemento);
+    }
+}
+
+realizar(sumarTotal,preciosComida);
+console.log("la suma de tus productos es $"+total);
+
+
 
 
 
