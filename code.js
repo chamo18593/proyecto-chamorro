@@ -5,6 +5,69 @@ function saludar(){
 
 saludar();
 
+const menu=[
+{
+    codigo:"111111",
+    producto:"Donas rosas",
+    precio:"200",
+},
+{
+    codigo:"111112",
+    producto:"Donas con Chocolate",
+    precio:"200",
+},
+{
+    codigo:"111113",
+    producto:"Waffles",
+    precio:"400",
+},
+{
+    codigo:"111114",
+    producto:"Cookies con chips ",
+    precio:"200",
+},
+{
+    codigo:"111115",
+    producto:"Brownie",
+    precio:"300",
+},
+{
+    codigo:"111116",
+    producto:"Budin de vainilla",
+    precio:"150",
+},
+{
+    codigo:"111117",
+    producto:"Budin de chocolate",
+    precio:"150",
+},
+{
+    codigo:"111118",
+    producto:"Pan de campo",
+    precio:"200",
+},
+{
+    codigo:"111119",
+    producto:"Bizcochitos de grasa",
+    precio:"200",
+},
+{
+    codigo:"111120",
+    producto:"Chipa",
+    precio:"100",
+},
+{
+    codigo:"111121",
+    producto:"croissant con jyq",
+    precio:"400",
+},
+];
+
+for(const comida of menu){
+    console.log(comida.producto);
+    console.log(comida.precio);
+}
+
 CatalogoDeComida();
 function CatalogoDeComida()
 {
@@ -27,12 +90,12 @@ function CatalogoDeComida()
 
 function mostrarComidaDulce()
 {
-    alert("\nWaffles\nCookies\nBrownie\nBudin");
+    alert("\nWaffles\nCookies\nBrownie\nBudin\nDonas");
 }
 
 function mostrarComidaSalada()
 {
-    alert("\nPan\nPizza\nChipa\nSanguchitos");
+    alert("\nPan\nBizcochitos\nChipa\ncroissant con jyq");
 }
 
 
@@ -57,16 +120,6 @@ let saludo = () => {
 
 let nomCompleto=saludo();
 alert(nomCompleto);
-
-const listaDeComidaDulce = ["waffles","brownie","cookies","budin"];
-console.log(listaDeComidaDulce);
-
-const listaDeComidaSalada = ["pan","pizza","chipa","sanguchitos"];
-console.log(listaDeComidaSalada);
-
-const compras= listaDeComidaDulce.concat(listaDeComidaSalada);
-console.log(compras);
-
 
 
 
