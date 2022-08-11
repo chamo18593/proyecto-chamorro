@@ -8,60 +8,80 @@ saludar();
 const menu=[
 {
     codigo:"111111",
-    producto:"Donas rosas",
+    nombre:"donas rosas",
     precio:"200",
+    tipo:"dulce",
 },
 {
     codigo:"111112",
-    producto:"Donas con Chocolate",
+    nombre:"Donas con Chocolate",
     precio:"200",
+    tipo:"dulce",
 },
 {
     codigo:"111113",
-    producto:"Waffles",
+    nombre:"Waffles",
     precio:"400",
+    tipo:"dulce",
 },
 {
     codigo:"111114",
-    producto:"Cookies con chips ",
+    nombre:"Cookies con chips ",
     precio:"200",
+    tipo:"dulce",
 },
 {
     codigo:"111115",
-    producto:"Brownie",
+    nombre:"Brownie",
     precio:"300",
+    tipo:"dulce",
 },
 {
     codigo:"111116",
-    producto:"Budin de vainilla",
+    nombre:"Budin de vainilla",
     precio:"150",
+    tipo:"dulce",
 },
 {
     codigo:"111117",
-    producto:"Budin de chocolate",
+    nombre:"Budin de chocolate",
     precio:"150",
+    tipo:"dulce",
 },
 {
     codigo:"111118",
-    producto:"Pan de campo",
+    nombre:"Pan de campo",
     precio:"200",
+    tipo:"salado",
 },
 {
     codigo:"111119",
-    producto:"Bizcochitos de grasa",
+    nombre:"Bizcochitos de grasa",
     precio:"200",
+    tipo:"salado",
 },
 {
     codigo:"111120",
-    producto:"Chipa",
+    nombre:"Chipa",
     precio:"100",
+    tipo:"salado",
 },
 {
     codigo:"111121",
-    producto:"croissant con jyq",
+    nombre:"croissant con jyq",
     precio:"400",
+    tipo:"salado",
 },
 ];
+
+// Buscador 
+menu.forEach((producto)=>console.log(producto.nombre));
+
+const tipode=menu.filter((producto)=>producto.tipo=="dulce");
+console.log(tipode);
+
+console.table(tipode);
+
 
 for(const comida of menu){
     console.log(comida.producto);
@@ -121,6 +141,8 @@ let saludo = () => {
 let nomCompleto=saludo();
 alert(nomCompleto);
 
+
+
 //Ejemplo del pedido 
 
 const preciosComida=[200,400,150];
@@ -138,6 +160,7 @@ function realizar(operacion,lista){
 
 realizar(sumarTotal,preciosComida);
 console.log("la suma de tus productos es $"+total);
+
 
 
 
