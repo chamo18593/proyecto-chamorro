@@ -162,6 +162,11 @@ realizar(sumarTotal,preciosComida);
 console.log("la suma de tus productos es $"+total);
 
 
+let ahora=new Date();
+console.log(ahora);
+
+
+
 
 
 
